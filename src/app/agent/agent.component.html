@@ -1,0 +1,209 @@
+
+  <div id="fh5co-search-map">
+      <div class="search-property">
+        <div class="s-holder">
+          <h2>Search Properties</h2>
+          <form #detailForm ="ngForm" (ngSubmit)="saveDetail(detailForm)">
+          <div class="row">
+            <div class="col-xxs-12 col-xs-12">
+            
+              <div class="input-field">
+                
+                <label for="from">Keyword:</label>
+                <input id="Any" name="Keyword" [(ngModel)]="Keyword" type="text" id="from-place" class="form-control"  placeholder="Any"/>
+              </div>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <section>
+                <label for="class">Property Status:</label>
+              
+                <select class="cs-select cs-skin-border" name="propertystatus"  [(ngModel)]="propertystatus">
+                  <option value="" disabled selected>Any</option>
+                  <option value="1">Rent</option>
+                  <option value="2">Sale</option>
+                </select>
+              </section>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <section>
+                <label for="class">Property Type:</label>
+                <select class="cs-select cs-skin-border input-half" name ="propertytype" [(ngModel)]="propertytype">
+                  <option value="" disabled selected>Any</option>
+                  <option value="1">Building</option>
+                  <option value="2">Office</option>
+                </select>
+              </section>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <div class="input-field">
+                <label for="from">Location:</label>
+                <input type="text" name="Location" [(ngModel)]="Location" class="form-control" id="from-place" placeholder="Any"/>
+              </div>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <section>
+                <label for="class">Price:</label>
+                <div class="wide">
+                  <select class="cs-select cs-select-half cs-skin-border input-half" name="price" [(ngModel)]="price">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                  <select class="cs-select cs-select-half cs-skin-border input-half"  name="price" [(ngModel)]="price" >
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                </div>
+              </section>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <section>
+                <label for="class">Bedrooms:</label>
+                <div class="wide">
+                  <select class="cs-select cs-select-half cs-skin-border input-half"  name="Bedrooms" [(ngModel)]="Bedrooms">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                  <select class="cs-select cs-select-half cs-skin-border input-half"  name="Bedrooms" [(ngModel)]="Bedrooms">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                </div>
+              </section>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <section>
+                <label for="class">Bathrooms:</label>
+                <div class="wide">
+                  <select class="cs-select cs-select-half cs-skin-border input-half" name="Bathrooms" [(ngModel)]="Bathrooms">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                  <select class="cs-select cs-select-half cs-skin-border input-half">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                </div>
+              </section>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <section>
+                <label for="class">Area:</label>
+                <div class="wide">
+                  <select class="cs-select cs-select-half cs-skin-border input-half" name="Area" [(ngModel)]="Area">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                  <select class="cs-select cs-select-half cs-skin-border input-half">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                </div>
+              </section>
+            </div>
+            <div class="col-xxs-12 col-xs-12">
+              <section>
+                <label for="class">Parking spots:</label>
+                <div class="wide">
+                  <select class="cs-select cs-select-half cs-skin-border input-half" name="Parking" [(ngModel)]="Parking">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                  <select class="cs-select cs-select-half cs-skin-border input-half">
+                    <option value="" disabled selected>Any</option>
+                    <option value="1">Building</option>
+                    <option value="2">Office</option>
+                  </select>
+                </div>
+              </section>
+            </div>
+            <div class="col-xxs-12 col-xs-12 text-center">
+                <input type="submit" value="Learn More" class="btn btn-primary">
+             
+           </div>
+          
+          
+          </div>
+          </form>
+          {{detailForm.value|json}}
+        </div>
+      </div>
+    <div class="map" style="background-image: url(assets/images/cover_bg_1.jpg);">
+    </div>
+  </div>
+  <div id="fh5co-about" class="fh5co-agent">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+          <h3>Our Agents</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+          <div class="fh5co-staff">
+            <img class="img-responsive" src="assets/images/user-1.jpg" alt="Free HTML5 Templates by freeHTML5.co">
+            <h3>Jean Smith</h3>
+            <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
+            <p class="fh5co-social-icons">
+              <a href="#"><i class="icon-twitter2"></i></a>
+              <a href="#"><i class="icon-facebook2"></i></a>
+              <a href="#"><i class="icon-instagram"></i></a>
+              <a href="#"><i class="icon-dribbble2"></i></a>
+              <a href="#"><i class="icon-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+          <div class="fh5co-staff">
+            <img class="img-responsive" src="assets/images/user-2.jpg" alt="Free HTML5 Templates by freeHTML5.co">
+            <h3>Hush Raven</h3>
+            <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
+            <p class="fh5co-social-icons">
+              <a href="#"><i class="icon-twitter2"></i></a>
+              <a href="#"><i class="icon-facebook2"></i></a>
+              <a href="#"><i class="icon-instagram"></i></a>
+              <a href="#"><i class="icon-dribbble2"></i></a>
+              <a href="#"><i class="icon-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+          <div class="fh5co-staff">
+            <img class="img-responsive" src="assets/images/user-3.jpg" alt="Free HTML5 Templates by freeHTML5.co">
+            <h3>Alex King</h3>
+            <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
+            <p class="fh5co-social-icons">
+              <a href="#"><i class="icon-twitter2"></i></a>
+              <a href="#"><i class="icon-facebook2"></i></a>
+              <a href="#"><i class="icon-instagram"></i></a>
+              <a href="#"><i class="icon-dribbble2"></i></a>
+              <a href="#"><i class="icon-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-3 text-center animate-box" data-animate-effect="fadeIn">
+          <div class="fh5co-staff">
+            <img class="img-responsive" src="assets/images/user-4.jpg" alt="Free HTML5 Templates by freeHTML5.co">
+            <h3>Hush Raven</h3>
+            <p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat</p>
+            <p class="fh5co-social-icons">
+              <a href="#"><i class="icon-twitter2"></i></a>
+              <a href="#"><i class="icon-facebook2"></i></a>
+              <a href="#"><i class="icon-instagram"></i></a>
+              <a href="#"><i class="icon-dribbble2"></i></a>
+              <a href="#"><i class="icon-youtube"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
