@@ -5,20 +5,22 @@ import {  BlogComponent} from './blog/blog.component'
 import { ContactComponent} from './contact/contact.component';
 import { AgentComponent} from './agent/agent.component';
 import { PropertiesComponent} from './properties/properties.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard} from './auth.guard'
+
 
 
 const appRoutes: Routes = [
-  //{
-   // path: '',
-    //loadChildren: './home/project.module#ProjectModule'
-    // Lazy Loading
-  //},
+  {
+    path:"login", component:LoginComponent
+  },
+  
   {
     path: '',
-    component: HomeComponent  
+    component: LoginComponent  
   },
   {
-    path: 'home',
+    path: 'home',canActivate:[AuthGuard],
     component: HomeComponent  
   },
   
@@ -26,7 +28,6 @@ const appRoutes: Routes = [
     path: 'properties',
     component: PropertiesComponent  
   },
-  
   
   
 {
@@ -48,8 +49,6 @@ const appRoutes: Routes = [
     //pathMatch:'full'
   },
  
-  
-  
 ];
 
 @NgModule({
